@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 - 손쉬운현장-전기</title>
+<style>
+  body { font-family: -apple-system, "Malgun Gothic", "맑은 고딕", sans-serif;
+         line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 24px;
+         color: #222; }
+  h1 { border-bottom: 3px solid #1565C0; padding-bottom: 10px; color: #1565C0; }
+  h2 { margin-top: 32px; color: #1565C0; border-left: 4px solid #1565C0;
+       padding-left: 10px; }
+  h3 { margin-top: 20px; color: #444; font-size: 1.05em; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left;
+           font-size: 0.95em; }
+  th { background: #E3F2FD; }
+  strong { color: #0D47A1; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 28px 0; }
+  ul { padding-left: 20px; }
+  code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<h1>개인정보처리방침</h1>
+
+<p><strong>앱 이름:</strong> 손쉬운현장-전기</p>
+<p><strong>개발자:</strong> SuYong Kim</p>
+<p><strong>문의:</strong> ksr6960@daum.net</p>
+<p><strong>시행일:</strong> 2026년 7월 16일</p>
+
+<hr>
+
+<h2>1. 개요</h2>
+
+<p>SuYong Kim(이하 "개발자")은 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다.</p>
+
+<p><strong>손쉬운현장-전기</strong>(이하 "본 앱")는 건설현장 전기공사 서류(작업일보, TBM 일지, 자재사용승인요청서, 자재검수요청서, 검측요청서)를 작성하고 PDF로 생성하는 도구입니다.</p>
+
+<p><strong>본 앱의 가장 중요한 특징은, 이용자가 입력한 모든 정보가 이용자의 기기 안에만 저장되며 개발자의 서버로 전송되거나 수집되지 않는다는 점입니다.</strong></p>
+
+<hr>
+
+<h2>2. 처리하는 정보</h2>
+
+<p>본 앱은 서류 작성을 위해 이용자가 <strong>직접 입력하거나 선택한</strong> 다음 정보를 이용자의 기기에 저장합니다.</p>
+
+<table>
+<tr><th>구분</th><th>내용</th><th>이용 목적</th></tr>
+<tr><td>현장 정보</td><td>공사명, 동 목록, 현장대리인·감리원 이름, 지역명</td><td>서류 헤더 자동 입력</td></tr>
+<tr><td>작업자 정보</td><td>이름, 생년월일, 서명 이미지</td><td>출역 명단, TBM 참석자, 검측요청서 작성</td></tr>
+<tr><td>서명·도장 이미지</td><td>현장대리인 서명/도장, 법인 인감</td><td>서류에 서명·날인 표시</td></tr>
+<tr><td>사진</td><td>거래명세서, 검측 사진, TBM 사진</td><td>서류 첨부 및 자재 정보 인식(OCR)</td></tr>
+<tr><td>음성 입력 내용</td><td>작업 내용 등 음성으로 입력한 텍스트</td><td>텍스트 입력 편의</td></tr>
+<tr><td>작업 기록</td><td>작업 내용, 출역 기록, 공정율, 자재 목록 등</td><td>서류 작성</td></tr>
+</table>
+
+<p><strong>개발자는 위 정보를 수집하지 않으며, 열람할 수 없습니다.</strong> 모든 정보는 이용자 기기의 앱 전용 저장 공간에만 보관됩니다.</p>
+
+<hr>
+
+<h2>3. 기기 권한 사용</h2>
+
+<p>본 앱은 다음 권한을 사용하며, 각 권한은 해당 기능을 사용할 때만 요청됩니다.</p>
+
+<ul>
+<li><strong>카메라 / 사진</strong>: 거래명세서 촬영·스캔, 검측 사진 및 TBM 사진 첨부, 서명 이미지 등록</li>
+<li><strong>마이크</strong>: 작업 내용을 음성으로 입력(음성-텍스트 변환)</li>
+<li><strong>저장소</strong>: 생성한 PDF를 저장하거나 다른 앱으로 전송</li>
+</ul>
+
+<p>권한을 허용하지 않아도 해당 기능을 제외한 나머지 기능은 정상적으로 사용할 수 있습니다.</p>
+
+<hr>
+
+<h2>4. 정보의 처리 방식</h2>
+
+<h3>4-1. 기기 내 저장 (서버 전송 없음)</h3>
+
+<p>이용자가 입력한 모든 서류 정보, 사진, 서명 이미지는 <strong>이용자의 기기 내부에만</strong> JSON 파일 및 이미지 파일 형태로 저장됩니다. 개발자의 서버나 외부 저장소로 전송되지 않습니다.</p>
+
+<h3>4-2. 문자 인식(OCR)</h3>
+
+<p>거래명세서 사진에서 자재 정보를 읽어오는 기능은 <strong>Google ML Kit</strong>을 사용하며, <strong>기기 내부에서 처리(온디바이스)</strong> 됩니다. 사진이 외부로 전송되지 않습니다.</p>
+
+<h3>4-3. 음성 입력</h3>
+
+<p>음성을 텍스트로 바꾸는 기능은 이용자 기기의 <strong>안드로이드 음성 인식 기능</strong>을 사용합니다. 이 과정에서 기기 설정에 따라 음성 데이터가 Google의 음성 인식 서비스로 전달될 수 있으며, 이는 Google의 개인정보처리방침에 따릅니다.</p>
+
+<h3>4-4. 날씨 정보 조회 (유일한 외부 통신)</h3>
+
+<p>작업일보의 날씨를 자동으로 채우기 위해, 이용자가 설정한 <strong>현장의 좌표(위도·경도)</strong> 를 날씨 정보 제공 서비스(Open-Meteo, https://open-meteo.com)에 전송하여 해당 날짜의 날씨를 조회합니다.</p>
+
+<ul>
+<li>전송되는 정보: 좌표(위도·경도), 조회 날짜</li>
+<li>전송되지 않는 정보: 이용자 식별 정보, 개인정보, 서류 내용</li>
+<li>이 기능은 이용자가 현장 정보에 지역명·좌표를 설정한 경우에만 동작합니다.</li>
+</ul>
+
+<h3>4-5. 결제 (구독)</h3>
+
+<p>본 앱의 PDF 전송·저장 기능은 구독 이용자에게 제공됩니다. 결제는 <strong>Google Play를 통해서만</strong> 처리되며, 개발자는 이용자의 카드번호 등 결제 정보를 수집하거나 보관하지 않습니다. 결제 관련 정보는 Google의 개인정보처리방침에 따라 처리됩니다.</p>
+
+<hr>
+
+<h2>5. 제3자 제공 및 위탁</h2>
+
+<p>개발자는 이용자의 정보를 제3자에게 제공하거나 판매하지 않습니다.</p>
+
+<p>본 앱이 이용하는 외부 서비스는 다음과 같습니다.</p>
+
+<table>
+<tr><th>서비스</th><th>제공자</th><th>목적</th><th>전달되는 정보</th></tr>
+<tr><td>Google Play 결제</td><td>Google</td><td>구독 결제 처리</td><td>결제 정보(Google이 직접 처리)</td></tr>
+<tr><td>Open-Meteo</td><td>Open-Meteo</td><td>날씨 조회</td><td>좌표, 날짜</td></tr>
+<tr><td>Google ML Kit</td><td>Google</td><td>문자 인식(OCR)</td><td>없음(기기 내 처리)</td></tr>
+<tr><td>안드로이드 음성 인식</td><td>Google</td><td>음성-텍스트 변환</td><td>음성 데이터(기기 설정에 따름)</td></tr>
+</table>
+
+<hr>
+
+<h2>6. 보유 및 파기</h2>
+
+<ul>
+<li>이용자가 입력한 모든 정보는 이용자가 <strong>직접 삭제</strong>하거나, <strong>앱을 삭제</strong>하면 기기에서 함께 삭제됩니다.</li>
+<li>개발자는 이용자의 정보를 보유하지 않으므로, 별도의 파기 절차가 없습니다.</li>
+<li>앱을 삭제하면 저장된 서류·사진·서명이 모두 사라지므로, 필요한 서류는 미리 PDF로 저장하거나 전송해 두시기 바랍니다.</li>
+</ul>
+
+<hr>
+
+<h2>7. 이용자의 권리</h2>
+
+<p>이용자는 앱 내에서 언제든지 자신이 입력한 정보를 <strong>열람·수정·삭제</strong>할 수 있습니다. 개발자가 별도로 보관하는 정보가 없으므로, 정보 열람·정정·삭제 요청은 앱 내에서 직접 수행하실 수 있습니다.</p>
+
+<hr>
+
+<h2>8. 아동의 개인정보</h2>
+
+<p>본 앱은 건설현장 실무자를 위한 업무용 도구로, 만 14세 미만 아동을 대상으로 하지 않으며 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+<hr>
+
+<h2>9. 안전성 확보 조치</h2>
+
+<ul>
+<li>모든 정보는 기기의 앱 전용 저장 영역에 보관되며, 다른 앱에서 접근할 수 없습니다.</li>
+<li>외부 통신은 날씨 조회에 한하며, HTTPS(암호화 통신)를 사용합니다.</li>
+</ul>
+
+<hr>
+
+<h2>10. 방침의 변경</h2>
+
+<p>본 방침이 변경되는 경우, 변경 내용과 시행일을 본 페이지에 게시합니다. 중요한 변경이 있을 경우 앱 내 공지 또는 스토어 업데이트 설명을 통해 안내합니다.</p>
+
+<hr>
+
+<h2>11. 문의처</h2>
+
+<p>개인정보 처리에 관한 문의, 불만, 피해 구제는 아래로 연락해 주시기 바랍니다.</p>
+
+<ul>
+<li><strong>개발자:</strong> SuYong Kim</li>
+<li><strong>이메일:</strong> ksr6960@daum.net</li>
+</ul>
+
+<p>기타 개인정보 침해에 대한 신고나 상담이 필요하신 경우 아래 기관에 문의하실 수 있습니다.</p>
+
+<ul>
+<li>개인정보침해 신고센터 (privacy.kisa.or.kr / 국번없이 118)</li>
+<li>개인정보 분쟁조정위원회 (kopico.go.kr / 1833-6972)</li>
+<li>대검찰청 사이버수사과 (spo.go.kr / 1301)</li>
+<li>경찰청 사이버수사국 (ecrm.police.go.kr / 182)</li>
+</ul>
+
+<hr>
+
+<p><strong>시행일: 2026년 7월 16일</strong></p>
+
+</body>
+</html>
